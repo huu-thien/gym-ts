@@ -19,7 +19,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: PropsType) => {
 
   const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
 
-  const navbarBackground = isTopOfPage ? "" : "bg-primary-100 drop-shadow";
+  const navbarBackground = !isTopOfPage ? "" : "bg-primary-100 drop-shadow";
 
   return (
     <nav>
